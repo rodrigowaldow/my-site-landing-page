@@ -1,4 +1,5 @@
-$yellow: #fef380;
+$blue: #0093e7;
+$label-color: #fff;
 $navbar-breakpoint: 720px;
 
 @import '~bulma';
@@ -10,7 +11,7 @@ $navbar-breakpoint: 720px;
 
 html,
 body {
-  background-color: #{$dark};
+  background-color: #{$blue};
   min-height: 100vh;
 }
 

@@ -1,6 +1,6 @@
 {
-  "name": "Griko Nibras - Software developer from Surabaya, ID",
-  "short_name": "Griko Nibras",
+  "name": "Rodrigo Waldow - Software developer from RS, Brazil",
+  "short_name": "Rodrigo Waldow",
   "icons": [
     {
       "src": "/static/android-chrome-192x192.png",
@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffdd57",
-  "background_color": "#ffdd57",
+  "theme_color": "#209cee",
+  "background_color": "#209cee",
   "display": "standalone",
   "orientation": "portrait"
 }

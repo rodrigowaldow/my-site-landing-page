@@ -20,9 +20,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 export default {
-  colorHex: '#FEF380',
-  email: 'hello@griko.id',
-  emailSecondary: 'griko@protonmail.com',
+  colorHex: '#0093e7',
+  email: 'hello@waldow.id',
+  emailSecondary: 'waldowrodrigo@gmail.com',
   links: [
     {
       id: 'dev.to',
@@ -153,5 +153,5 @@ export default {
       isPrimary: true,
     },
   ],
-  pageTitle: 'Griko Nibras - Software developer from Surabaya, ID',
+  pageTitle: 'Rodrigo Waldow - Software developer from RS, Brazil',
 }

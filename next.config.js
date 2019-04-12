@@ -9,14 +9,14 @@ module.exports = withPlugins(
     [require('next-optimized-images')],
     [require('next-purgecss')],
   ],
-  {
-    webpack: config => {
-      config.plugins.push(
-        new webpack.EnvironmentPlugin({
-          GITHUB_TOKEN: process.env.GITHUB_TOKEN,
-        })
-      )
-      return config
-    },
-  }
+  // {
+  //   webpack: config => {
+  //     config.plugins.push(
+  //       new webpack.EnvironmentPlugin({
+  //         GITHUB_TOKEN: process.env.GITHUB_TOKEN,
+  //       })
+  //     )
+  //     return config
+  //   },
+  // }
 )

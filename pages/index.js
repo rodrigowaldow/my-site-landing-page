@@ -8,13 +8,13 @@ import Layout from '../layouts/Layout'
 import LazyLoad from 'react-lazyload'
 import Navbar from '../components/Navbar'
 import Spring from '../components/Spring'
-import { faTerminal } from '@fortawesome/free-solid-svg-icons'
+import { faTerminal, faDatabase, faLaptopCode, faCode } from '@fortawesome/free-solid-svg-icons'
 import metadata from '../metadata'
 
 class SectionFirst extends Component {
   render() {
     return (
-      <div className="has-background-warning">
+      <div className="has-background-info">
         <section className="section">
           <div className="container">
             <LazyLoad>
@@ -22,8 +22,8 @@ class SectionFirst extends Component {
                 <div id="avatar" />
               </Fade>
             </LazyLoad>
-            <div className="card g-max-width">
-              <div className="card-content has-text-centered">
+            <div className="box g-max-width">
+              <div className="has-text-centered">
                 {this.props.children}
               </div>
             </div>
@@ -37,12 +37,23 @@ class SectionFirst extends Component {
             margin: 0 auto -96px;
             width: 192px;
             height: 192px;
-            background-image: url('https://www.gravatar.com/avatar/c0f719f012e74ffaec3a8e4f7b854689?s=1024');
+            background-image: url('/static/ninja.svg');
             background-size: cover;
-            border: 3px white solid;
+            // border: 3px white solid;
             border-radius: 100%;
           }
-          .card {
+          #knowledge {
+            position: relative;
+            z-index: 2;
+            margin: 0 auto -96px;
+            width: 192px;
+            height: 192px;
+            background-image: url('/static/scroll.svg');
+            background-size: cover;
+            // border: 3px white solid;
+            // border-radius: 100%;
+          }
+          .box {
             padding-top: calc(96px + 2rem);
           }
           .container {
@@ -60,54 +71,108 @@ class SectionFirst extends Component {
 
 const Skillsets = () => (
   <div>
-    <div className="columns content">
+    <div className="content">
       <div className="column">
-        <i className="e1a-paintbrush e1a-lg" />
-        <i className="e1a-man_artist_tone1 e1a-lg" />
-        <i className="e1a-crayon e1a-lg" />
+        <h1><FontAwesomeIcon icon={faLaptopCode} /></h1>
         <h3>Front-end Developer</h3>
         <p>I design responsive and friendly user interfaces.</p>
       </div>
+      <br />
+      <div className="columns content">
+        <div className="column">
+          <LazyLoad>
+            <Fade>
+              <div className="badges" id="knowledge-front" />
+            </Fade>
+          </LazyLoad>
+          <h6>Known languages</h6>
+          <ul className="list-unstyled">
+            <li>CSS3</li>
+            <li>Sass</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+        <div className="column">
+          <LazyLoad>
+            <Fade>
+              <div className="badges" id="weapons-front" />
+            </Fade>
+          </LazyLoad>
+          <h6>Primary weapons</h6>
+          <ul className="list-unstyled">
+            <li>GitHub / GitLab</li>
+            <li>Ionic</li>
+            <li>Visual Studio Code</li>
+          </ul>
+        </div>
+        <div className="column">
+          <LazyLoad>
+            <Fade>
+              <div className="badges" id="iamgood-front" />
+            </Fade>
+          </LazyLoad>
+          <h6>Things I'm good at</h6>
+          <ul className="list-unstyled">
+            <li>AngularJS</li>
+            <li>Bulma</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div className="has-background-dark" id="g-section-separator" />
+    <div className="content">
       <div className="column">
-        <i className="e1a-keyboard e1a-lg" />
-        <i className="e1a-man_technologist_tone1 e1a-lg" />
-        <i className="e1a-mouse_three_button e1a-lg" />
+        <h1><FontAwesomeIcon icon={faCode} /></h1>
         <h3>Back-end Developer</h3>
         <p>I develop website logics and information systems.</p>
       </div>
-    </div>
-    <br />
-    <div className="columns content">
-      <div className="column">
-        <h6>Known languages</h6>
-        <ul className="list-unstyled">
-          <li>CSS3</li>
-          <li>HTML</li>
-          <li>Java</li>
-          <li>JavaScript</li>
-          <li>PHP</li>
-        </ul>
-      </div>
-      <div className="column">
-        <h6>Primary weapons</h6>
-        <ul className="list-unstyled">
-          <li>GitHub / GitLab</li>
-          <li>GitKraken</li>
-          <li>Hyper</li>
-          <li>Insomnia</li>
-          <li>PhpStorm</li>
-          <li>Visual Studio Code</li>
-        </ul>
-      </div>
-      <div className="column">
-        <h6>Things I'm good at</h6>
-        <ul className="list-unstyled">
-          <li>Docker</li>
-          <li>Hibernate ORM</li>
-          <li>Laravel</li>
-          <li>Next.js</li>
-          <li>Vue.js</li>
-        </ul>
+      <br />
+      <div className="columns content">
+        <div className="column">
+          <LazyLoad>
+            <Fade>
+              <div className="badges" id="knowledge-back" />
+            </Fade>
+          </LazyLoad>
+          <h6>Known languages</h6>
+          <ul className="list-unstyled">
+            <li>C#</li>
+            <li>ASP.NET</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+        <div className="column">
+          <LazyLoad>
+            <Fade>
+              <div className="badges" id="weapons-back" />
+            </Fade>
+          </LazyLoad>
+          <h6>Primary weapons</h6>
+          <ul className="list-unstyled">
+            <li>GitHub / GitLab</li>
+            <li>SQL Studio</li>
+            <li>Visual Studio</li>
+            <li>Visual Studio Code</li>
+          </ul>
+        </div>
+        <div className="column">
+          <LazyLoad>
+            <Fade>
+              <div className="badges" id="iamgood-back" />
+            </Fade>
+          </LazyLoad>
+          <h6>Things I'm good at</h6>
+          <ul className="list-unstyled">
+            <li>Sharepoint Server/Online</li>
+            <li>Office365</li>
+            <li>MVC</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -117,43 +182,8 @@ class SectionSecond extends Component {
   render() {
     return (
       <div>
-        <section className="section has-background-dark">
-          <div className="container">
-            <div className="card is-shadowless g-max-width">
-              <div className="card-content has-text-centered has-text-light">
-                {this.props.children}
-              </div>
-            </div>
-          </div>
-        </section>
-        <style jsx>{`
-          .card {
-            background: transparent;
-          }
-          .container {
-            padding: 0 0.4rem;
-          }
-          .section {
-            padding-bottom: 0;
-          }
-        `}</style>
-      </div>
-    )
-  }
-}
-
-class SectionThird extends Component {
-  render() {
-    return (
-      <div>
-        <section className="section has-background-dark">
-          <div className="container">
-            <div className="card g-max-width">
-              <div className="card-content has-text-centered">
-                <IAmInterested />
-              </div>
-            </div>
-          </div>
+        <section className="section has-background-dark call-to-action is-primary has-text-centered">
+          <IAmInterested />
         </section>
         <style jsx>{`
           .card-content {
@@ -162,9 +192,6 @@ class SectionThird extends Component {
           .container {
             padding: 0 0.4rem;
           }
-          .section {
-            padding-top: 0;
-          }
         `}</style>
       </div>
     )
@@ -172,8 +199,8 @@ class SectionThird extends Component {
 }
 
 export default () => (
-  <Layout colorHex="#fef380">
-    <div className="hero is-fullheight is-warning">
+  <Layout>
+    <div className="hero is-info is-fullheight">
       <div className="hero-head">
         <Navbar />
       </div>
@@ -183,7 +210,7 @@ export default () => (
             <Spring />
           </Bounce>
           <div className="subtitle">
-            Hello there! I'm a software developer from Surabaya, ID.
+            Hello there! I'm Rodrigo Waldow, a software developer from Santa Cruz do Sul, Brazil.
           </div>
         </div>
       </div>
@@ -196,204 +223,16 @@ export default () => (
           <FontAwesomeIcon icon={faTerminal} /> since 2014
         </h1>
         <p style={{ maxWidth: '800px', margin: '0 auto' }}>
-          I started to learn programming when entering college. Since then, I've
-          done various freelance projects and collaborate with other skillful
-          people to create and develop websites and information systems.
+        I started learning programming by myself, I went to college and I still learn new tricks every day. 
+        I have worked on several projects and collaborated with other skilled people to create and develop websites, 
+        collaborative sites and information systems.
         </p>
       </div>
       <hr />
       <Skillsets />
-      <hr />
-      <div className="content">
-        <h1>
-          Recent works <i className="e1a-lollipop" />
-        </h1>
-        <p>
-          Here and the current and past projects, you can{' '}
-          <a href={`mailto:${metadata.email}`}>
-            request via email for the full list.
-          </a>
-        </p>
-      </div>
-      <br />
-      <div className="columns">
-        <div className="column">
-          <div className="card">
-            <div className="card-image">
-              <figure className="image">
-                <LazyLoad>
-                  <Fade>
-                    <img
-                      src={require('../static/g-works-inforlabs.jpg')}
-                      alt="Inforlabs"
-                    />
-                  </Fade>
-                </LazyLoad>
-              </figure>
-            </div>
-            <div className="card-content">
-              <h4 className="title is-4">Inforlabs Website</h4>
-              <p className="subtitle is-6">
-                Institut Teknologi Adhi Tama Surabaya
-              </p>
-              <p>
-                Currently live and still in development, Inforlabs allows
-                assistant labs and participants from all Informatics
-                laboratories to register and manage subject practicums.
-              </p>
-            </div>
-            <div className="card-footer">
-              <a
-                href="https://inforlabs.net"
-                className="card-footer-item"
-                rel="noreferrer"
-                target="_blank">
-                inforlabs.net
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <div className="card-image">
-              <figure className="image">
-                <LazyLoad>
-                  <Fade>
-                    <img
-                      src={require('../static/g-works-rotten-reviews.jpg')}
-                      alt="Rotten Reviews"
-                    />
-                  </Fade>
-                </LazyLoad>
-              </figure>
-            </div>
-            <div className="card-content">
-              <h4 className="title is-4">Rotten Reviews</h4>
-              <p className="subtitle is-6">Personal open-source project</p>
-              <p>
-                Rotten Reviews is a Node.js package that scrapes movie and TV
-                show audience reviews from Rotten Tomatoes. Also maintained by{' '}
-                <a
-                  href="https://github.com/vimark1"
-                  target="_blank"
-                  rel="noreferrer">
-                  Filype Pereira
-                </a>
-                {' and '}
-                <a
-                  href="https://github.com/jbbn"
-                  target="_blank"
-                  rel="noreferrer">
-                  Joao Bueno
-                </a>
-                .
-              </p>
-            </div>
-            <div className="card-footer">
-              <a
-                href="https://github.com/grikomsn/rotten-reviews"
-                className="card-footer-item"
-                rel="noreferrer"
-                target="_blank">
-                grikomsn/rotten-reviews
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </SectionFirst>
 
-    <SectionSecond>
-      <div className="content">
-        <h1 className="has-text-light">
-          Shameless plug <i className="e1a-electric_plug" />
-        </h1>
-        <p>Here are the things I do on my spare time.</p>
-      </div>
-      <br />
-      <div className="columns">
-        <div className="column">
-          <div className="card">
-            <div className="card-image">
-              <figure className="image">
-                <LazyLoad>
-                  <Fade>
-                    <img
-                      src={require('../static/g-plugs-articles.jpg')}
-                      alt="Development Articles"
-                    />
-                  </Fade>
-                </LazyLoad>
-              </figure>
-            </div>
-            <div className="card-content">
-              <h4 className="title is-4">Development Articles</h4>
-              <p className="subtitle is-6">
-                Writing dev stuff on dev.to or Medium
-              </p>
-              <p>
-                From writing tutorials to sharing my thoughts on a specific
-                topic, I sometimes write on dev.to or Medium. Not my forte, but
-                I do try to increase my writing skills.
-              </p>
-            </div>
-            <div className="card-footer">
-              <a
-                href="https://dev.to/grikomsn"
-                className="card-footer-item"
-                rel="noreferrer"
-                target="_blank">
-                dev.to
-              </a>
-              <a
-                href="https://medium.com/@griko"
-                className="card-footer-item"
-                rel="noreferrer"
-                target="_blank">
-                Medium
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <div className="card-image">
-              <figure className="image">
-                <LazyLoad>
-                  <Fade>
-                    <img
-                      src={require('../static/g-plugs-wallpaper.jpg')}
-                      alt="Gadget Wallpapers"
-                    />
-                  </Fade>
-                </LazyLoad>
-              </figure>
-            </div>
-            <div className="card-content">
-              <h4 className="title is-4">Gadget Wallpapers</h4>
-              <p className="subtitle is-6">Creating minimalist backgrounds</p>
-              <p>
-                I started making wallpapers as a hobby since 2012 and publish
-                them on DeviantArt. Nowadays it's just for killing time or when
-                I'm on the mood.
-              </p>
-            </div>
-            <div className="card-footer">
-              <a
-                href="https://grikomsn.deviantart.com/gallery/66550103/Wallpapers"
-                className="card-footer-item"
-                rel="noreferrer"
-                target="_blank">
-                DeviantArt Gallery
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-    </SectionSecond>
-
-    <SectionThird />
+    <SectionSecond />
 
     <Footer />
 
@@ -418,6 +257,33 @@ export default () => (
       .image > img {
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
+      }
+      .badges {
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1em
+        background-size: cover;
+      }
+      #knowledge-front{
+        background-image: url('/static/scroll2.svg');
+      }
+      #weapons-front{
+        background-image: url('/static/blades.svg');
+      }
+      #iamgood-front{
+        background-image: url('/static/target.svg');
+      }
+      #knowledge-back{
+        background-image: url('/static/scroll.svg');
+      }
+      #weapons-back{
+        background-image: url('/static/shuriken.svg');
+      }
+      #iamgood-back{
+        background-image: url('/static/gong.svg');
       }
     `}</style>
   </Layout>

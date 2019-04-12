@@ -14,7 +14,7 @@ export default class Spring extends Component {
     return (
       <div>
         <img
-          src="/static/g-spring.svg"
+          src="/static/waldow2.png"
           id="g-spring"
           alt={metadata.pageTitle}
           onClick={this.scrollAfterClick}
@@ -31,11 +31,11 @@ export default class Spring extends Component {
           }
           #g-spring:hover {
             filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.3));
-            transform: scale(1.2) rotate(1deg);
+            transform: scale(1.2);
           }
           #g-spring:active {
             filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.3));
-            transform: scale(1.15) rotate(0.5deg);
+            transform: scale(1.15);
           }
         `}</style>
       </div>

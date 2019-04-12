@@ -69,17 +69,16 @@ export default class extends Component {
                 About
               </NextLink>
 
-              <NextLink href="/open-source" className="navbar-item">
-                Open Source
-              </NextLink>
-
-              <NextLink href="/socials" className="navbar-item">
+              {/* <NextLink href="/socials" className="navbar-item">
                 Socials
-              </NextLink>
+              </NextLink> */}
 
-              <a className="navbar-item" onClick={this.toggleModal.bind(this)}>
+              <NextLink href="/contact" className="navbar-item">
                 Contact
-              </a>
+              </NextLink>
+              {/* <a className="navbar-item" onClick={this.toggleModal.bind(this)}>
+                Contact
+              </a> */}
             </div>
           </div>
         </nav>
