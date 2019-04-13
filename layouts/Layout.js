@@ -57,11 +57,11 @@ export default class Layout extends Component {
           <meta name="theme-color" content={this.props.colorHex} />
 
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:site" content="@griko_nibras" />
-          <meta name="twitter:creator" content="@griko_nibras" />
+          <meta name="twitter:site" content="@rodrigowaldow" />
+          <meta name="twitter:creator" content="@rodrigowaldow" />
 
-          <meta property="og:url" content="https://griko.id" />
-          <meta property="og:title" content="Griko Nibras" />
+          <meta property="og:url" content="https://www.rodrigowaldow.com.br" />
+          <meta property="og:title" content="Rodrigo Waldow" />
           <meta
             property="og:description"
             content="Software developer from Surabaya, ID"

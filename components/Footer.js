@@ -29,7 +29,7 @@ export default class Footer extends Component {
           </div>
           <small>
             Handcrafted with <FontAwesomeIcon icon={faHeart} fixedWidth /> by
-            myself. Copyright &copy; {new Date().getFullYear()}.<br />
+            griko. Copyright &copy; {new Date().getFullYear()}.<br />
             Made with{' '}
             <a
               href="https://bulma.io/"
@@ -56,15 +56,7 @@ export default class Footer extends Component {
               className="has-text-light">
               <b>Netlify</b>
             </a>
-            . Source available on{' '}
-            <a
-              href="https://github.com/grikomsn/landing-page"
-              target="_blank"
-              rel="noreferrer"
-              className="has-text-light">
-              <b>GitHub</b>
-            </a>
-            .
+            . 
           </small>
         </div>
         <style jsx>{`
