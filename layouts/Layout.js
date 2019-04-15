@@ -23,7 +23,7 @@ export default class Layout extends Component {
           <link
             rel="apple-touch-icon"
             sizes="180x180"
-            href={require('../static/apple-touch-icon.png')}
+            href={require('../static/apple-icon.png')}
           />
           <link
             rel="icon"

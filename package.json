@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Personal landing page, powered with Next.js",
   "repository": "https://github.com/rodrigowaldow/landing-page.git",
-  "author": "Griko Nibras <grikomsn@gmail.com>",
+  "author": "Rodrigo Waldow <waldowrodrigo@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "node server.js",

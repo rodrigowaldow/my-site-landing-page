@@ -56,9 +56,9 @@ class SectionFirst extends Component {
           .box {
             padding-top: calc(96px + 2rem);
           }
-          .container {
-            padding: 0.4rem 0.4rem 0;
-          }
+          // .container {
+          //   padding: 0.4rem 0.4rem 0;
+          // }
           #g-section-separator {
             margin-top: calc(7px - 8rem);
             height: 4rem;
@@ -213,6 +213,7 @@ export default () => (
             Hello there! I'm Rodrigo Waldow, a software developer from Santa Cruz do Sul, Brazil.
           </div>
         </div>
+        
       </div>
     </div>
 
@@ -220,7 +221,7 @@ export default () => (
       <div className="content">
         <h1>
           Converting coffee <i className="e1a-coffee" /> to code{' '}
-          <FontAwesomeIcon icon={faTerminal} /> since 2014
+          <FontAwesomeIcon icon={faTerminal} /> since 2012
         </h1>
         <p style={{ maxWidth: '800px', margin: '0 auto' }}>
         I started learning programming by myself, I went to college and I still learn new tricks every day. 
@@ -240,10 +241,10 @@ export default () => (
       hr {
         margin: 3rem 0;
       }
-      section.section {
-        padding-left: 0;
-        padding-right: 0;
-      }
+      // section.section {
+      //   padding-left: 0;
+      //   padding-right: 0;
+      // }
       ul.list-unstyled {
         display: inline;
         list-style: none;

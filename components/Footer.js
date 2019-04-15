@@ -29,7 +29,7 @@ export default class Footer extends Component {
           </div>
           <small>
             Handcrafted with <FontAwesomeIcon icon={faHeart} fixedWidth /> by
-            griko. Copyright &copy; {new Date().getFullYear()}.<br />
+            Waldow. Copyright &copy; {new Date().getFullYear()}.<br />
             Made with{' '}
             <a
               href="https://bulma.io/"

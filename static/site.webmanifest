@@ -1,15 +1,10 @@
 {
-  "name": "Rodrigo Waldow - Software developer from RS, Brazil",
+  "name": "Rodrigo Waldow - Software developer from Santa Cruz do Sul, Brazil",
   "short_name": "Rodrigo Waldow",
   "icons": [
     {
-      "src": "/static/android-chrome-192x192.png",
+      "src": "/static/android-icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/static/android-chrome-512x512.png",
-      "sizes": "512x512",
       "type": "image/png"
     }
   ],
