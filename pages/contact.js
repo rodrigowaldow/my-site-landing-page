@@ -5,10 +5,8 @@ import Layout from '../layouts/Layout'
 import Navbar from '../components/Navbar'
 
 const ContactForm = () => (
-  <form name="contact" method="POST" action="/success" data-netlify="true" netlify-honeypot="bot-field">
-    <p className="is-hidden">
-      <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
-    </p>
+  <form name="contact" method="POST" action="/success" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+    <input hidden name="form-name" defaultValue="contact" />
     <div className="field is-horizontal">
       <div className="field-label is-normal">
         <label className="label">From</label>
@@ -55,7 +53,10 @@ const ContactForm = () => (
           </div>
         </div>
       </div>
-    </div>    
+    </div>
+    <div className="field is-horizontal">
+      <div data-netlify-recaptcha="true"></div>
+    </div>
     <div className="field is-horizontal">
       <div className="field-label">
         
@@ -63,7 +64,7 @@ const ContactForm = () => (
       <div className="field-body">
         <div className="field">
           <div className="control">
-            <button className="button is-success" type="submit" value="Submit" id="Form-submit">
+            <button className="button is-success" type="submit">
               Send message
             </button>
           </div>

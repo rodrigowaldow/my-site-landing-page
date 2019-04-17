@@ -64,7 +64,7 @@ export default class Layout extends Component {
           <meta property="og:title" content="Rodrigo Waldow" />
           <meta
             property="og:description"
-            content="Software developer from Surabaya, ID"
+            content="Software developer from Rio Grande do Sul, Brazil"
           />
           <meta
             property="og:image"

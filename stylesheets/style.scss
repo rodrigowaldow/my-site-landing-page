@@ -1,5 +1,6 @@
 $blue: #0093e7;
 $label-color: #fff;
+$white: #fff;
 $navbar-breakpoint: 720px;
 
 @import '~bulma';
@@ -18,4 +19,8 @@ body {
 .g-max-width {
   max-width: 1024px;
   margin: 0 auto;
+}
+
+.navbar-item{
+  color: #{$white};
 }
