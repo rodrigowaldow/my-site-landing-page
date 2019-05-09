@@ -29,7 +29,7 @@ class SectionFirst extends Component {
             </div>
           </div>
         </section>
-        <div className="has-background-dark" id="g-section-separator" />
+        {/* <div className="has-background-dark" id="g-section-separator" /> */}
         <style jsx>{`
           #avatar {
             position: relative;
@@ -122,7 +122,7 @@ const Skillsets = () => (
         </div>
       </div>
     </div>
-    <div className="has-background-dark" id="g-section-separator" />
+    {/* <div className="" id="g-section-separator" /> */}
     <div className="content">
       <div className="column">
         <h1><FontAwesomeIcon icon={faCode} /></h1>
@@ -181,8 +181,8 @@ const Skillsets = () => (
 class SectionSecond extends Component {
   render() {
     return (
-      <div>
-        <section className="section has-background-dark call-to-action is-primary has-text-centered">
+      <div className="has-background-info">
+        <section className="section call-to-action has-text-centered">
           <IAmInterested />
         </section>
         <style jsx>{`

@@ -29,6 +29,7 @@
     "next-optimized-images": "^1.4.1",
     "next-page-transitions": "^1.0.0-alpha.4",
     "next-purgecss": "^2.0.0",
+    "next-seo": "^1.11.2",
     "node-sass": "^4.9.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
