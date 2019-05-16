@@ -22,7 +22,7 @@ import {
 
 export default {
   colorHex: '#0093e7',
-  email: 'hello@waldow.id',
+  email: 'waldowrodrigo@gmail.com',
   emailSecondary: 'waldowrodrigo@gmail.com',
   links: [
     {
